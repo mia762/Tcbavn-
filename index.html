@@ -1,96 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>This Could’ve Been a Voice Note</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mia's World</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #FF4D98;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+    h2 {
+      color: #FF4D98;
+      font-size: 2em;
+    }
+    .glitter-text {
+      font-family: 'Arial', sans-serif;
+      font-size: 30px;
+      color: #FF4D98;
+      background: linear-gradient(to right, #FF4D98, #FF9A00);
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: glitter 1.5s linear infinite;
+    }
+    @keyframes glitter {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 100% 100%; }
+    }
+    iframe {
+      width: 100%;
+      height: 380px;
+      border: none;
+    }
+    .spotify-container {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <h1>This Could’ve Been a Voice Note</h1>
-    <p class="bio">Real talk, real vibes. Sims, wine, and side-eyes—welcome to Mia’s world.</p>
-    <nav>
-      <a href="#podcast">Podcast</a>
-      <a href="#shop">Shop</a>
-      <a href="#about">About Me</a>
-      <a href="#blog">Blog</a>
-      <a href="#mood">Mia’s Mood</a>
-    </nav>
+    Mia’s World
   </header>
 
-  <section id="featured" class="section">
-    <h2>Featured</h2>
-    <p>Latest episode, hot product, or fave blog post spotlighted here. (Filler content)</p>
-  </section>
-
-  <section id="podcast" class="section">
-    <h2>Podcast Episodes</h2>
-    <div class="podcast-list">
-      <p>Ep 1: Why You Always in My Business?</p>
-      <p>Ep 2: Work Robberies & Side Eyes</p>
-    </div>
-    <div class="poll">
-      <h3>Rate this Episode</h3>
-      <button>1 Star</button>
-      <button>2 Stars</button>
-      <button>3 Stars</button>
-      <button>4 Stars</button>
-      <button>5 Stars</button>
+  <section id="mia-mood">
+    <h2 class="glitter-text">Mia’s Mood</h2>
+    <p>Check out what I’m listening to right now!</p>
+    <div class="spotify-container">
+      <iframe src="https://open.spotify.com/show/2XhbU7OZ0txawC101n0otJ?si=ticYAcWQT1mBdsxDiSpgWg" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
   </section>
 
-  <section id="mia-checkin" class="section">
-    <h2>Mia’s Check-In</h2>
-    <p>Weight loss update + what’s going on this week. (Filler)</p>
-  </section>
-
-  <section id="recommends" class="section">
-    <h2>Mia Recommends</h2>
-    <ul>
-      <li>Wine Pick: Baddie Rosé</li>
-      <li>Beauty: Glossier Cloud Paint</li>
-      <li>Sims Mod: Slice of Life</li>
-    </ul>
-  </section>
-
-  <section id="mood" class="section">
-    <h2>Mia’s Mood Playlist</h2>
-    <iframe src="https://open.spotify.com/embed/playlist/your_playlist_id_here" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-  </section>
-
-  <section id="shop" class="section">
-    <h2>Shop</h2>
-    <p>Your cute bejeweled bag, POD items, and more go here. (Filler until added)</p>
-  </section>
-
-  <section id="about" class="section">
+  <section id="about-me">
     <h2>About Me</h2>
-    <p>I’m Mia—a wine-sipping, Sims-playing, real-ass chick on a glow-up journey. This site’s my little corner to rant, recommend, and be real.</p>
+    <p>Welcome to my world, where we talk Sims, weight loss, wine, and so much more. Real talk, real vibes!</p>
   </section>
 
-  <section id="blog" class="section">
-    <h2>Blog & Hobbies</h2>
-    <p>Cooking, crochet, Sims drama, and whatever else I feel like sharing.</p>
-  </section>
-
-  <section id="brands" class="section">
-    <h2>Brands I’d Love to Work With</h2>
-    <p>Fashion Nova, Glossier, Savage X Fenty, ColourPop, etc.</p>
-  </section>
-
-  <section id="messages" class="section">
-    <h2>Leave a Message</h2>
-    <form>
-      <textarea placeholder="Say something anonymous..." required></textarea><br/>
-      <button type="submit">Send</button>
-    </form>
+  <section id="latest-podcast">
+    <h2>Latest Podcast Episode</h2>
+    <p>Catch up on the latest episode of <strong>This Could've Been a Voice Note</strong>! Stay tuned for more!</p>
+    <div class="spotify-container">
+      <iframe src="https://open.spotify.com/show/2XhbU7OZ0txawC101n0otJ?si=ticYAcWQT1mBdsxDiSpgWg" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
   </section>
 
   <footer>
-    <p>Tip Jar: $dalady2</p>
-    <p>© 2025 Mia</p>
+    <p>&copy; 2025 Mia’s World | All Rights Reserved</p>
   </footer>
 
 </body>
