@@ -1,86 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mia's World</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>This Could’ve Been a Voice Note</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
-      color: #333;
+      background: linear-gradient(to bottom right, pink, orange);
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
+      color: #2d2d2d;
     }
-    header {
-      background-color: #FF4D98;
-      padding: 20px;
-      text-align: center;
-      color: #fff;
-      font-size: 2em;
+
+    .navbar {
+      background: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
       font-weight: bold;
+      box-shadow: 0 0 8px #ff66cc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    section {
-      padding: 40px;
+
+    .navbar a {
+      text-decoration: none;
+      color: #d63384;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #ff5500;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 30px 10px;
       text-align: center;
+      font-size: 2.2em;
+      font-weight: bold;
+      box-shadow: 0 0 10px pink;
     }
+
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      background: white;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #ff77d9;
+    }
+
+    .glitter {
+      background-image: url("https://www.transparenttextures.com/patterns/glitter.png");
+    }
+
     h2 {
-      color: #FF4D98;
-      font-size: 2em;
+      color: #d63384;
     }
-    .glitter-text {
-      font-family: 'Arial', sans-serif;
-      font-size: 30px;
-      color: #FF4D98;
-      background: linear-gradient(to right, #FF4D98, #FF9A00);
-      -webkit-background-clip: text;
-      color: transparent;
-      animation: glitter 1.5s linear infinite;
-    }
-    @keyframes glitter {
-      0% { background-position: 0% 0%; }
-      100% { background-position: 100% 100%; }
-    }
+
     iframe {
       width: 100%;
-      height: 380px;
       border: none;
+      border-radius: 10px;
+      margin-top: 10px;
     }
-    .spotify-container {
-      margin-top: 20px;
+
+    .tip-jar {
+      background: #ffd6e7;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .tip-jar a {
+      color: #d63384;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background: #fff4f9;
     }
   </style>
 </head>
-<body>
+<body class="glitter">
+  <div class="navbar">
+    <a href="#podcast">Podcast</a>
+    <a href="#blog">Blog</a>
+    <a href="#shop">Shop</a>
+    <a href="#playlist">Mia’s Mood</a>
+    <a href="#tip">Tip Jar</a>
+    <a href="#recommend">Recommends</a>
+  </div>
 
   <header>
-    Mia’s World
+    This Could’ve Been a Voice Note
   </header>
 
-  <section id="mia-mood">
-    <h2 class="glitter-text">Mia’s Mood</h2>
-    <p>Check out what I’m listening to right now!</p>
-    <div class="spotify-container">
-      <iframe src="https://open.spotify.com/show/2XhbU7OZ0txawC101n0otJ?si=ticYAcWQT1mBdsxDiSpgWg" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
+  <section id="podcast">
+    <h2>Podcast</h2>
+    <iframe src="https://open.spotify.com/embed/show/2XhbU7OZ0txawC101n0otJ?utm_source=generator" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
   </section>
 
-  <section id="about-me">
-    <h2>About Me</h2>
-    <p>Welcome to my world, where we talk Sims, weight loss, wine, and so much more. Real talk, real vibes!</p>
+  <section id="blog">
+    <h2>Blog / Journal</h2>
+    <p>Coming soon! Stay tuned for messy rants, random gems, and real-life vibes.</p>
   </section>
 
-  <section id="latest-podcast">
-    <h2>Latest Podcast Episode</h2>
-    <p>Catch up on the latest episode of <strong>This Could've Been a Voice Note</strong>! Stay tuned for more!</p>
-    <div class="spotify-container">
-      <iframe src="https://open.spotify.com/show/2XhbU7OZ0txawC101n0otJ?si=ticYAcWQT1mBdsxDiSpgWg" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
+  <section id="shop">
+    <h2>Shop</h2>
+    <p>Coming soon: Baddie-approved merch & dropshipping items!</p>
+  </section>
+
+  <section id="tip" class="tip-jar">
+    <h2>Tip Jar</h2>
+    <p>Love the vibes? <a href="https://cash.app/$dalady2" target="_blank">$dalady2 on Cash App</a></p>
+  </section>
+
+  <section id="playlist">
+    <h2>Mia’s Mood Playlist</h2>
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4Wsb4d7NKfP?utm_source=generator" height="380"></iframe>
+  </section>
+
+  <section>
+    <h2>Anonymous Comments</h2>
+    <p><em>(Coming soon - leave your tea & reactions anonymously!)</em></p>
+  </section>
+
+  <section>
+    <h2>Featured</h2>
+    <p><strong>Podcast Episode:</strong> Work Robberies & Petty Coworkers</p>
+  </section>
+
+  <section>
+    <h2>Live Poll / Q&A</h2>
+    <p><em>(Feature coming soon!)</em></p>
+  </section>
+
+  <section id="recommend">
+    <h2>Mia Recommends</h2>
+    <ul>
+      <li>Wine: Sweet Red by Roscato</li>
+      <li>Beauty: Glossier Cloud Paint in "Dawn"</li>
+      <li>Sims Mod: Basemental Drugs (Drama!)</li>
+    </ul>
   </section>
 
   <footer>
-    <p>&copy; 2025 Mia’s World | All Rights Reserved</p>
+    Real talk, real vibes. Sims, wine, and side-eyes—welcome to Mia’s world.
   </footer>
-
 </body>
 </html>
