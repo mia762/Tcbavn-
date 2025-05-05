@@ -1,125 +1,141 @@
-/* Reset & base */
+/* Baddie Aesthetic Styles */
 body {
   margin: 0;
-  font-family: 'Arial Rounded MT Bold', sans-serif;
-  background: linear-gradient(135deg, #ff8ec3, #ffa94d);
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #ff69b4, #ffa500);
   color: #fff;
-  text-align: center;
-  background-attachment: fixed;
-  animation: glitterBackground 10s infinite linear;
+  overflow-x: hidden;
 }
 
-@keyframes glitterBackground {
-  0% { background-position: 0 0; }
-  100% { background-position: 1000px 1000px; }
+/* Glitter Animation */
+@keyframes sparkle {
+  0% {opacity: 0.8;}
+  50% {opacity: 1;}
+  100% {opacity: 0.8;}
+}
+
+.glitter {
+  animation: sparkle 2s infinite ease-in-out;
 }
 
 /* Header */
 header {
-  padding: 2em 1em;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
-}
-
-h1 {
-  font-size: 2.5em;
-  margin: 0;
-  color: #fff8f0;
-}
-
-.bio {
-  margin-top: 0.5em;
-  font-style: italic;
+  padding: 30px 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 /* Sections */
 section {
-  padding: 2em 1em;
-  margin: 1em auto;
-  max-width: 700px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-section h2 {
+/* Section Titles */
+h2 {
   color: #fff;
   font-size: 1.8em;
-  margin-bottom: 0.5em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
-/* Playlist, iframe styling */
-iframe {
-  border-radius: 12px;
-  width: 100%;
-  max-width: 100%;
+/* Links */
+a {
+  color: #ffe4e1;
+  text-decoration: none;
 }
 
-/* Recommends */
-.recommends ul {
-  list-style: none;
-  padding: 0;
-}
-.recommends li {
-  background: rgba(255, 255, 255, 0.2);
-  margin: 0.5em 0;
-  padding: 0.5em;
-  border-radius: 6px;
+a:hover {
+  text-decoration: underline;
 }
 
-/* Poll styling */
-.poll form {
-  display: inline-block;
-  text-align: left;
-}
-
-/* Comments box */
-.comments textarea {
-  width: 90%;
-  height: 100px;
-  border: none;
-  border-radius: 8px;
-  padding: 1em;
-  font-family: inherit;
-  resize: none;
-}
-
-.comments button {
-  margin-top: 1em;
-  padding: 0.5em 1.5em;
-  background-color: #ff61a6;
+/* Buttons */
+button, .btn {
+  background-color: #ff69b4;
   color: white;
   border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
-
-.comments button:hover {
-  background-color: #ff3796;
-}
-
-/* Tip Jar */
-.tipjar a {
-  display: inline-block;
-  background-color: #ffd700;
-  color: #000;
-  padding: 1em 2em;
-  font-weight: bold;
-  text-decoration: none;
+  padding: 12px 20px;
+  margin-top: 10px;
+  font-size: 1em;
   border-radius: 8px;
-  margin-top: 1em;
-  transition: transform 0.2s ease-in-out;
-}
-.tipjar a:hover {
-  transform: scale(1.05);
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-/* Footer */
-footer {
-  margin-top: 3em;
-  padding: 1em;
-  background-color: rgba(0,0,0,0.2);
-  font-size: 0.9em;
+button:hover, .btn:hover {
+  background-color: #ff1493;
+}
+
+/* Tip Jar Floating Button */
+.tip-jar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffa500;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  font-weight: bold;
+  z-index: 999;
+}
+
+/* Playlist Styling */
+.playlist-box {
+  background-color: rgba(0,0,0,0.4);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px #ff69b4;
+}
+
+/* Anonymous Comment Box */
+.comment-box {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.comment-box textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: inherit;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.comment-box button {
+  background-color: #ff69b4;
+  margin-top: 10px;
+}
+
+/* Emoji Reactions */
+.reaction-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.reaction {
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.reaction:hover {
+  transform: scale(1.3);
 }
