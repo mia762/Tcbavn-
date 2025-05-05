@@ -6,155 +6,152 @@
   <title>This Could’ve Been a Voice Note</title>
   <style>
     body {
-      background: linear-gradient(to bottom right, pink, orange);
+      background: linear-gradient(to bottom right, #ff66cc, #ff9966);
       font-family: 'Arial', sans-serif;
+      color: #fff;
       margin: 0;
       padding: 0;
-      color: #2d2d2d;
-    }
-
-    .navbar {
-      background: #fff;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      font-weight: bold;
-      box-shadow: 0 0 8px #ff66cc;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .navbar a {
-      text-decoration: none;
-      color: #d63384;
-      transition: 0.3s;
-    }
-
-    .navbar a:hover {
-      color: #ff5500;
     }
 
     header {
-      background: rgba(255, 255, 255, 0.8);
-      padding: 30px 10px;
       text-align: center;
-      font-size: 2.2em;
-      font-weight: bold;
-      box-shadow: 0 0 10px pink;
+      padding: 40px 20px;
+      background: rgba(0, 0, 0, 0.2);
     }
 
-    section {
+    h1 {
+      font-size: 2.5em;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .section {
+      margin: 30px auto;
       padding: 20px;
-      margin: 20px auto;
-      background: white;
       max-width: 800px;
+      background-color: rgba(0, 0, 0, 0.2);
       border-radius: 12px;
-      box-shadow: 0 0 10px #ff77d9;
-    }
-
-    .glitter {
-      background-image: url("https://www.transparenttextures.com/patterns/glitter.png");
-    }
-
-    h2 {
-      color: #d63384;
     }
 
     iframe {
       width: 100%;
+      height: 152px;
       border: none;
-      border-radius: 10px;
-      margin-top: 10px;
+      border-radius: 12px;
     }
 
-    .tip-jar {
-      background: #ffd6e7;
-      text-align: center;
-      padding: 15px;
-      border-radius: 10px;
-    }
-
-    .tip-jar a {
-      color: #d63384;
+    .tipjar-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(135deg, #ff66cc, #ff9966);
+      color: white;
       font-weight: bold;
-      text-decoration: none;
+      border: none;
+      border-radius: 50px;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      background: #fff4f9;
+    .tipjar-btn:hover {
+      transform: scale(1.05);
+    }
+
+    .emoji-reactions span {
+      font-size: 24px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    textarea {
+      width: 100%;
+      height: 80px;
+      border-radius: 8px;
+      border: none;
+      padding: 10px;
+      resize: none;
+      font-size: 14px;
+    }
+
+    button.submit-btn {
+      background: #fff;
+      color: #ff66cc;
+      font-weight: bold;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    h2 {
+      text-shadow: 1px 1px 3px #000;
     }
   </style>
 </head>
-<body class="glitter">
-  <div class="navbar">
-    <a href="#podcast">Podcast</a>
-    <a href="#blog">Blog</a>
-    <a href="#shop">Shop</a>
-    <a href="#playlist">Mia’s Mood</a>
-    <a href="#tip">Tip Jar</a>
-    <a href="#recommend">Recommends</a>
-  </div>
+<body>
 
   <header>
-    This Could’ve Been a Voice Note
+    <h1>This Could’ve Been a Voice Note</h1>
+    <p>Real talk, real vibes. Sims, wine, and side-eyes—welcome to Mia’s world.</p>
   </header>
 
-  <section id="podcast">
+  <div class="section">
     <h2>Podcast</h2>
-    <iframe src="https://open.spotify.com/embed/show/2XhbU7OZ0txawC101n0otJ?utm_source=generator" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-  </section>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/2XhbU7OZ0txawC101n0otJ?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
 
-  <section id="blog">
-    <h2>Blog / Journal</h2>
-    <p>Coming soon! Stay tuned for messy rants, random gems, and real-life vibes.</p>
-  </section>
-
-  <section id="shop">
-    <h2>Shop</h2>
-    <p>Coming soon: Baddie-approved merch & dropshipping items!</p>
-  </section>
-
-  <section id="tip" class="tip-jar">
-    <h2>Tip Jar</h2>
-    <p>Love the vibes? <a href="https://cash.app/$dalady2" target="_blank">$dalady2 on Cash App</a></p>
-  </section>
-
-  <section id="playlist">
+  <div class="section">
     <h2>Mia’s Mood Playlist</h2>
-    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4Wsb4d7NKfP?utm_source=generator" height="380"></iframe>
-  </section>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6VdMW310YC7?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
 
-  <section>
+  <div class="section">
     <h2>Anonymous Comments</h2>
-    <p><em>(Coming soon - leave your tea & reactions anonymously!)</em></p>
-  </section>
+    <div class="emoji-reactions">
+      <span>🔥</span><span>😂</span><span>❤️</span><span>👏</span><span>🙄</span>
+    </div>
+    <textarea placeholder="Leave an anonymous comment..."></textarea>
+    <br />
+    <button class="submit-btn">Submit</button>
+  </div>
 
-  <section>
+  <div class="section">
     <h2>Featured</h2>
-    <p><strong>Podcast Episode:</strong> Work Robberies & Petty Coworkers</p>
-  </section>
+    <p>[Filler content: Highlight a blog post, product, or podcast here.]</p>
+  </div>
 
-  <section>
+  <div class="section">
     <h2>Live Poll / Q&A</h2>
-    <p><em>(Feature coming soon!)</em></p>
-  </section>
+    <p>[Filler poll or form placeholder. Can be replaced with Google Form, Typeform, etc.]</p>
+  </div>
 
-  <section id="recommend">
+  <div class="section">
     <h2>Mia Recommends</h2>
     <ul>
-      <li>Wine: Sweet Red by Roscato</li>
-      <li>Beauty: Glossier Cloud Paint in "Dawn"</li>
-      <li>Sims Mod: Basemental Drugs (Drama!)</li>
+      <li>Wine Pick: Rosé All Day</li>
+      <li>Beauty Fave: Glossier Cloud Paint</li>
+      <li>Sims Mod: Slice of Life</li>
     </ul>
-  </section>
+  </div>
 
-  <footer>
-    Real talk, real vibes. Sims, wine, and side-eyes—welcome to Mia’s world.
-  </footer>
+  <div class="section">
+    <h2>Shop</h2>
+    <p>[Shop coming soon. Drops and designs will live here!]</p>
+  </div>
+
+  <div class="section">
+    <h2>Blog</h2>
+    <p>[Blog posts or journal entries will go here. Stay tuned!]</p>
+  </div>
+
+  <!-- Tip Jar Floating Button -->
+  <a href="https://cash.app/$dalady2" target="_blank">
+    <button class="tipjar-btn">Tip Jar</button>
+  </a>
+
 </body>
 </html>
