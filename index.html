@@ -3,53 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>This Could've Been a Voice Note</title>
+  <title>This Could’ve Been a Voice Note</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header Section -->
   <header>
-    <h1>This Could've Been a Voice Note</h1>
-    <p class="tagline">Real talk, real vibes. Sims, wine, and side-eyes—welcome to Mia’s world.</p>
+    <h1>This Could’ve Been a Voice Note</h1>
+    <p class="bio">Real talk, real vibes. Sims, wine, and side-eyes—welcome to Mia’s world.</p>
   </header>
 
-  <!-- Featured Section -->
-  <section id="featured">
+  <section class="featured">
     <h2>Featured</h2>
-    <p>This section will highlight your podcast, blog post, or product!</p>
-    <!-- Add your filler content here -->
+    <p>Check out the latest episode or blog post!</p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/2XhbU7OZ0txawC101n0otJ?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </section>
 
-  <!-- Podcast Section -->
-  <section id="podcast-player">
-    <h2>Listen to the Latest Episode</h2>
-    <iframe style="border-radius:12px" 
-      src="https://open.spotify.com/embed/show/2XhbU7OZ0txawC101n0otJ?utm_source=generator" 
-      width="100%" height="152" frameBorder="0" 
-      allowfullscreen="" 
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-      loading="lazy">
-    </iframe>
+  <section class="mood">
+    <h2>Mia’s Mood</h2>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4SBhb3fqCJd?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </section>
 
-  <!-- Mia's Mood Playlist Section -->
-  <section id="mood-playlist">
-    <h2>Mia's Mood Playlist</h2>
-    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2owgckkS6RQ?utm_source=generator" 
-      width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media">
-    </iframe>
+  <section class="recommends">
+    <h2>Mia Recommends</h2>
+    <ul>
+      <li>Wine Pick: Sweet Red Blend</li>
+      <li>Beauty: Glossier Cloud Paint</li>
+      <li>Sims Mod: Slice of Life</li>
+    </ul>
   </section>
 
-  <!-- Tip Jar Section -->
-  <section id="tip-jar">
+  <section class="poll">
+    <h2>What did you think?</h2>
+    <form>
+      <label><input type="radio" name="feedback" /> Loved it!</label><br/>
+      <label><input type="radio" name="feedback" /> It was cool</label><br/>
+      <label><input type="radio" name="feedback" /> Meh</label>
+    </form>
+  </section>
+
+  <section class="comments">
+    <h2>Anonymous Comments</h2>
+    <textarea placeholder="Leave a message…"></textarea>
+    <button>Post</button>
+    <p>(This is a demo. Comments won’t be saved.)</p>
+  </section>
+
+  <section class="tipjar">
     <h2>Tip Jar</h2>
-    <p>Support the podcast with a tip via Cash App!</p>
-    <a href="https://cash.app/$dalady2" target="_blank">Send a tip via Cash App!</a>
+    <a href="https://cash.app/$dalady2" target="_blank">$dalady2 — Tap to Tip</a>
   </section>
 
-  <!-- Footer Section -->
   <footer>
-    <p>Made with love, glitter, and a whole lot of sass. Stay tuned for more vibes!</p>
+    <p>Built with love & glitter</p>
   </footer>
 </body>
 </html>
