@@ -2,157 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>This Could’ve Been a Voice Note</title>
-  <style>
-    <link rel="stylesheet" href="style.css">
-    body {
-      background: linear-gradient(to bottom right, #ff66cc, #ff9966);
-      font-family: 'Arial', sans-serif;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background: rgba(0, 0, 0, 0.2);
-    }
-
-    h1 {
-      font-size: 2.5em;
-      text-shadow: 2px 2px 5px #000;
-    }
-
-    .section {
-      margin: 30px auto;
-      padding: 20px;
-      max-width: 800px;
-      background-color: rgba(0, 0, 0, 0.2);
-      border-radius: 12px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 152px;
-      border: none;
-      border-radius: 12px;
-    }
-
-    .tipjar-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: linear-gradient(135deg, #ff66cc, #ff9966);
-      color: white;
-      font-weight: bold;
-      border: none;
-      border-radius: 50px;
-      padding: 12px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      z-index: 9999;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      transition: transform 0.2s;
-    }
-
-    .tipjar-btn:hover {
-      transform: scale(1.05);
-    }
-
-    .emoji-reactions span {
-      font-size: 24px;
-      margin: 5px;
-      cursor: pointer;
-    }
-
-    textarea {
-      width: 100%;
-      height: 80px;
-      border-radius: 8px;
-      border: none;
-      padding: 10px;
-      resize: none;
-      font-size: 14px;
-    }
-
-    button.submit-btn {
-      background: #fff;
-      color: #ff66cc;
-      font-weight: bold;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 8px;
-      margin-top: 10px;
-      cursor: pointer;
-    }
-
-    h2 {
-      text-shadow: 1px 1px 3px #000;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>This Could've Been a Voice Note</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+  <!-- Header Section -->
   <header>
-    <h1>This Could’ve Been a Voice Note</h1>
-    <p>Real talk, real vibes. Sims, wine, and side-eyes—welcome to Mia’s world.</p>
+    <h1>This Could've Been a Voice Note</h1>
+    <p class="tagline">Real talk, real vibes. Sims, wine, and side-eyes—welcome to Mia’s world.</p>
   </header>
 
-  <div class="section">
-    <h2>Podcast</h2>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/2XhbU7OZ0txawC101n0otJ?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-  </div>
-
-  <div class="section">
-    <h2>Mia’s Mood Playlist</h2>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6VdMW310YC7?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-  </div>
-
-  <div class="section">
-    <h2>Anonymous Comments</h2>
-    <div class="emoji-reactions">
-      <span>🔥</span><span>😂</span><span>❤️</span><span>👏</span><span>🙄</span>
-    </div>
-    <textarea placeholder="Leave an anonymous comment..."></textarea>
-    <br />
-    <button class="submit-btn">Submit</button>
-  </div>
-
-  <div class="section">
+  <!-- Featured Section -->
+  <section id="featured">
     <h2>Featured</h2>
-    <p>[Filler content: Highlight a blog post, product, or podcast here.]</p>
-  </div>
+    <p>This section will highlight your podcast, blog post, or product!</p>
+    <!-- Add your filler content here -->
+  </section>
 
-  <div class="section">
-    <h2>Live Poll / Q&A</h2>
-    <p>[Filler poll or form placeholder. Can be replaced with Google Form, Typeform, etc.]</p>
-  </div>
+  <!-- Podcast Section -->
+  <section id="podcast-player">
+    <h2>Listen to the Latest Episode</h2>
+    <iframe style="border-radius:12px" 
+      src="https://open.spotify.com/embed/show/2XhbU7OZ0txawC101n0otJ?utm_source=generator" 
+      width="100%" height="152" frameBorder="0" 
+      allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+      loading="lazy">
+    </iframe>
+  </section>
 
-  <div class="section">
-    <h2>Mia Recommends</h2>
-    <ul>
-      <li>Wine Pick: Rosé All Day</li>
-      <li>Beauty Fave: Glossier Cloud Paint</li>
-      <li>Sims Mod: Slice of Life</li>
-    </ul>
-  </div>
+  <!-- Mia's Mood Playlist Section -->
+  <section id="mood-playlist">
+    <h2>Mia's Mood Playlist</h2>
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2owgckkS6RQ?utm_source=generator" 
+      width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media">
+    </iframe>
+  </section>
 
-  <div class="section">
-    <h2>Shop</h2>
-    <p>[Shop coming soon. Drops and designs will live here!]</p>
-  </div>
+  <!-- Tip Jar Section -->
+  <section id="tip-jar">
+    <h2>Tip Jar</h2>
+    <p>Support the podcast with a tip via Cash App!</p>
+    <a href="https://cash.app/$dalady2" target="_blank">Send a tip via Cash App!</a>
+  </section>
 
-  <div class="section">
-    <h2>Blog</h2>
-    <p>[Blog posts or journal entries will go here. Stay tuned!]</p>
-  </div>
-
-  <!-- Tip Jar Floating Button -->
-  <a href="https://cash.app/$dalady2" target="_blank">
-    <button class="tipjar-btn">Tip Jar</button>
-  </a>
-
+  <!-- Footer Section -->
+  <footer>
+    <p>Made with love, glitter, and a whole lot of sass. Stay tuned for more vibes!</p>
+  </footer>
 </body>
 </html>
