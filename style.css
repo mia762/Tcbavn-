@@ -1,107 +1,125 @@
-/* Glittery Gradient Background */
+/* Reset & base */
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #ff66b2, #ff9933);
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  background: linear-gradient(135deg, #ff8ec3, #ffa94d);
   color: #fff;
-  overflow-x: hidden;
-  position: relative;
+  text-align: center;
+  background-attachment: fixed;
+  animation: glitterBackground 10s infinite linear;
 }
 
-/* Glitter Overlay */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('https://i.imgur.com/6P2V3jE.gif');
-  opacity: 0.2;
-  pointer-events: none;
-  z-index: 1;
+@keyframes glitterBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 1000px; }
 }
 
-/* Main Content Container */
-main {
-  position: relative;
-  z-index: 2;
-  padding: 2rem;
+/* Header */
+header {
+  padding: 2em 1em;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
 }
 
-/* Headings */
-h1, h2, h3 {
-  font-weight: 700;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #fff8f0;
 }
 
-/* Buttons */
-button, .btn {
-  background: #fff;
-  color: #ff66b2;
+.bio {
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+/* Sections */
+section {
+  padding: 2em 1em;
+  margin: 1em auto;
+  max-width: 700px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+section h2 {
+  color: #fff;
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+/* Playlist, iframe styling */
+iframe {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Recommends */
+.recommends ul {
+  list-style: none;
+  padding: 0;
+}
+.recommends li {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border-radius: 6px;
+}
+
+/* Poll styling */
+.poll form {
+  display: inline-block;
+  text-align: left;
+}
+
+/* Comments box */
+.comments textarea {
+  width: 90%;
+  height: 100px;
   border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 30px;
-  font-weight: bold;
+  border-radius: 8px;
+  padding: 1em;
+  font-family: inherit;
+  resize: none;
+}
+
+.comments button {
+  margin-top: 1em;
+  padding: 0.5em 1.5em;
+  background-color: #ff61a6;
+  color: white;
+  border: none;
+  border-radius: 25px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px #fff;
-}
-
-button:hover, .btn:hover {
-  background: #ff66b2;
-  color: #fff;
-  box-shadow: 0 0 15px #ffccff;
-}
-
-/* Cards / Sections */
-section, .card {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Links */
-a {
-  color: #fff;
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-a:hover {
-  color: #ffe0f0;
-}
-
-/* Sparkle Animations */
-@keyframes shimmer {
-  0% { background-position: -1000px 0; }
-  100% { background-position: 1000px 0; }
-}
-
-.glitter-text {
-  background: linear-gradient(90deg, #fff 0%, #ffccff 50%, #fff 100%);
-  background-size: 200% auto;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: shimmer 2.5s linear infinite;
-}
-
-/* Sticky Tip Jar */
-.tip-jar {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #fff;
-  color: #ff66b2;
-  padding: 10px 20px;
-  border-radius: 30px;
   font-weight: bold;
-  z-index: 10;
-  box-shadow: 0 0 10px #fff;
+  transition: 0.3s ease;
 }
 
-.tip-jar:hover {
-  background: #ff66b2;
-  color: #fff;
-  box-shadow: 0 0 15px #ffccff;
+.comments button:hover {
+  background-color: #ff3796;
+}
+
+/* Tip Jar */
+.tipjar a {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #000;
+  padding: 1em 2em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 1em;
+  transition: transform 0.2s ease-in-out;
+}
+.tipjar a:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  margin-top: 3em;
+  padding: 1em;
+  background-color: rgba(0,0,0,0.2);
+  font-size: 0.9em;
 }
